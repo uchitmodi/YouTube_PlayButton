@@ -15,17 +15,17 @@
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-//------- Replace the following! ------AIzaSyCjGIn49DFUJIyalvasGISGuLL4P2f2NGA
-char ssid[] = "SmS_jiofi";       // your network SSID (name)
-char password[] = "sms123458956";  // your network key
-#define API_KEY "AIzaSyCjGIn49DFUJIyalvasGISGuLL4P2f2NGA"  // your google apps API Token
-#define CHANNEL_ID "UC7raRsx4ojx3cyXT3x9-PuQ" // makes up the url of channel
+//------- Replace the following! ------
+char ssid[] = "your_network";       // your network SSID (name)
+char password[] = "your_passkey";  // your network key
+#define API_KEY "your_google_api"  // your google apps API Token
+#define CHANNEL_ID "your_channel_id" // makes up the url of channel 
 
 WiFiClientSecure client;
 YoutubeApi api(API_KEY, client);
 
 long subs = 0;
-String chanelName = "TECHIESMS";
+String chanelName = "Your_Channel_name";
 
 unsigned long timeBetweenRequests = 3000;
 unsigned long nextRunTime;
